@@ -1,7 +1,7 @@
 # Token based authentication in WebAPI
 
 In questa demo viene illustrato come implementare l'autenticazione basata su token utilizzando ASPNet Core.
-L'autenticazione basata su tocken è diventata lo standard de-facto per le single-page application (SPA).
+L'autenticazione basata su token è diventata lo standard de-facto per le single-page application (SPA).
 
 E' possibile passare il token di autenticazione tramite header o tramite cookie.
 Solitamente per le applicazione mobile viene usato l'header, mentre per le web applicaziont è possibile utilizzare i cookie.
