@@ -25,9 +25,10 @@ username=TEST&password=TEST123
 ```
 
 E' possibile decodificare il token JWT utilizzando l'utility https://www.jsonwebtoken.io/
-
+Oppure vierificare la firma del token (occorre fornire la frase segreta) all'indirizzo http://jwt.io
 
 ### Riferimenti:
 
 *   https://samueleresca.net/2016/12/developing-token-authentication-using-asp-net-core/
 *   https://stormpath.com/blog/token-authentication-asp-net-core
+*   https://blogs.msdn.microsoft.com/webdev/2017/04/06/jwt-validation-and-authorization-in-asp-net-core/
