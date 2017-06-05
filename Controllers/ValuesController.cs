@@ -12,13 +12,14 @@ namespace AuthWebAPI.Controllers
     {
         // GET api/values
         [HttpGet]
+        [Authorize(Roles="Admin")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
-        [Authorize()]
+        [Authorize(Roles="Admin,Guest")]
         [HttpGet("{id}")]
         public string Get(int id)
         {
