@@ -68,7 +68,9 @@ namespace AuthWebAPI.Middleware
                 new Claim(JwtRegisteredClaimNames.Sub, username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Iat, unixDateTime.ToString(), ClaimValueTypes.Integer),
-                new Claim(ClaimTypes.Role, "Guest")
+                new Claim(ClaimTypes.Role, "Guest"),
+                new Claim(ClaimTypes.Role, "Foo"),
+                new Claim("Stanza", "123")
             };
 
             // create a new JWT token and write it to a string
